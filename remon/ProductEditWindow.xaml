@@ -1,0 +1,49 @@
+﻿<Window x:Class="remon.ProductEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Товар" Height="700" Width="450"
+        WindowStartupLocation="CenterOwner" ResizeMode="NoResize"
+        Closed="Window_Closed">
+    <ScrollViewer>
+        <StackPanel Margin="20">
+            <TextBlock x:Name="IdLabel" Text="ID товара:" FontWeight="Bold"/>
+            <TextBox x:Name="IdTb" IsReadOnly="True" Margin="0,5,0,15" Background="#F0F0F0"/>
+
+            <TextBlock Text="Фото (макс. 300x200):" FontWeight="Bold"/>
+            <Image x:Name="PhotoImg" Width="150" Height="100" Stretch="Uniform" HorizontalAlignment="Left" Margin="0,5,0,5"/>
+            <Button Content="Выбрать фото" Click="ChoosePhotoBtn_Click" HorizontalAlignment="Left" Padding="10,5" Margin="0,0,0,15"/>
+
+            <TextBlock Text="Наименование (артикул):" FontWeight="Bold"/>
+            <TextBox x:Name="NameTb" MaxLength="50" Margin="0,5,0,15"/>
+
+            <TextBlock Text="Категория:" FontWeight="Bold"/>
+            <ComboBox x:Name="CategoryCb" DisplayMemberPath="catergory_name" Margin="0,5,0,15"/>
+
+            <TextBlock Text="Описание:" FontWeight="Bold"/>
+            <TextBox x:Name="DescriptionTb" Height="60" TextWrapping="Wrap" AcceptsReturn="True" Margin="0,5,0,15"/>
+
+            <TextBlock Text="Производитель:" FontWeight="Bold"/>
+            <ComboBox x:Name="ManufacturerCb" DisplayMemberPath="name" Margin="0,5,0,15"/>
+
+            <TextBlock Text="Поставщик:" FontWeight="Bold"/>
+            <ComboBox x:Name="SupplierCb" DisplayMemberPath="name" Margin="0,5,0,15"/>
+
+            <TextBlock Text="Цена (руб.):" FontWeight="Bold"/>
+            <TextBox x:Name="PriceTb" Margin="0,5,0,15"/>
+
+            <TextBlock Text="Единица измерения:" FontWeight="Bold"/>
+            <ComboBox x:Name="UnitCb" DisplayMemberPath="name" Margin="0,5,0,15"/>
+
+            <TextBlock Text="Количество на складе:" FontWeight="Bold"/>
+            <TextBox x:Name="QuantityTb" Margin="0,5,0,15"/>
+
+            <TextBlock Text="Скидка (%):" FontWeight="Bold"/>
+            <TextBox x:Name="DiscountTb" Margin="0,5,0,25"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Сохранить" Click="SaveBtn_Click" Padding="15,5" Margin="0,0,10,0" Background="#2ECC71" Foreground="White"/>
+                <Button Content="Назад" Click="BackBtn_Click" Padding="15,5" Background="#95A5A6" Foreground="White"/>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Window>

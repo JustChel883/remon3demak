@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1de5575c463248cb8420749b027cac3e" Name="Diagram1">
+        <EntityTypeShape EntityType="remonModel.cities" Width="1.5" PointX="1.5" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="remonModel.id_category" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="remonModel.manufactor" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="remonModel.measurments" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="remonModel.order_items" Width="1.5" PointX="5.25" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="remonModel.pickup_points" Width="1.5" PointX="0.75" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="remonModel.products" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="remonModel.request" Width="1.5" PointX="3" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="remonModel.role" Width="1.5" PointX="1.5" PointY="27.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="remonModel.status" Width="1.5" PointX="0.75" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="remonModel.supplement" Width="1.5" PointX="0.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="remonModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="remonModel.users" Width="1.5" PointX="0.75" PointY="23.625" IsExpanded="true" />
+        <AssociationConnector Association="remonModel.FK_pickup_points_cities" ManuallyRouted="false" />
+        <AssociationConnector Association="remonModel.FK_products_id_category" ManuallyRouted="false" />
+        <AssociationConnector Association="remonModel.FK_products_manufactor" ManuallyRouted="false" />
+        <AssociationConnector Association="remonModel.FK_products_measurments1" ManuallyRouted="false" />
+        <AssociationConnector Association="remonModel.FK_order_items_products" ManuallyRouted="false" />
+        <AssociationConnector Association="remonModel.FK_order_items_request" ManuallyRouted="false" />
+        <AssociationConnector Association="remonModel.FK_request_pickup_points" ManuallyRouted="false" />
+        <AssociationConnector Association="remonModel.FK_products_supplement" ManuallyRouted="false" />
+        <AssociationConnector Association="remonModel.FK_request_status" ManuallyRouted="false" />
+        <AssociationConnector Association="remonModel.FK_request_users" ManuallyRouted="false" />
+        <AssociationConnector Association="remonModel.FK_users_role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
